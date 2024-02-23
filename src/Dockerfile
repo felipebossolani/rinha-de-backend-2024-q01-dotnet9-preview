@@ -1,10 +1,10 @@
-FROM mcr.microsoft.com/dotnet/aspnet:9.0.0-preview.1-alpine3.19 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:9.0-preview-alpine AS base
 USER app
 WORKDIR /app
 ENV ASPNETCORE_URLS http://*:8080
 EXPOSE 8080
 
-FROM mcr.microsoft.com/dotnet/sdk:9.0.0-preview.1-alpine3.19 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0-preview-alpine AS build
 WORKDIR /src
 COPY ["rinha-dotnet-9.csproj", "."]
 RUN dotnet restore "./rinha-dotnet-9.csproj"
@@ -22,4 +22,4 @@ ENTRYPOINT ["dotnet", "rinha-dotnet-9.dll"]
 
 
 #docker build -t rinha-de-backend-2024-q01-dotnet9 .
-#docker run -e "ConnectionStrings__rinha=Host=localhost;Database=rinha;Username=user;Password=password;Pooling=true;Minimum Pool Size=0;Maximum Pool Size=100;" -d -p 9999:9999 rinha-de-backend-2024-q01-dotnet 
+#docker run -e "ConnectionStrings__rinha=Host=localhost;Database=rinha;Username=user;Password=password;Pooling=true;Minimum Pool Size=0;Maximum Pool Size=100;" -d -p 9999:9999 rinha-de-backend-2024-q01-dotnet9
