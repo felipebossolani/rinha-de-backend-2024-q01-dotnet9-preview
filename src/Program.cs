@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Http.HttpResults;
-using rinha_dotnet_8;
+using rinha_dotnet_9;
 using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -67,7 +67,7 @@ app.MapPost("/clientes/{idCliente}/transacoes", async Task<Results<Ok<TransacaoO
         return TypedResults.UnprocessableEntity();
     }    
 })
-.WithName("RealizaTransaçãoCliente")
+.WithName("RealizaTransaï¿½ï¿½oCliente")
 .WithOpenApi();
 
 app.Run();

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace rinha_dotnet_8;
+namespace rinha_dotnet_9;
 
 //results
 public record struct Extrato(Saldo Saldo, IReadOnlyCollection<Transacao> UltimasTransacoes);

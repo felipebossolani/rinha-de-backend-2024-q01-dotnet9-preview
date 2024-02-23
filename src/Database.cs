@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 
-namespace rinha_dotnet_8;
+namespace rinha_dotnet_9;
 
 public sealed class Database : IAsyncDisposable
 {
