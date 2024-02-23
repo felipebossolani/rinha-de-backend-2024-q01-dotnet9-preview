@@ -1,12 +1,12 @@
 
 # Rinha de Backend - Segunda Edição
 
-Repositório para testar meus conhecimento na [rinha de backend 2ª edição - 2024/Q1](https://github.com/zanfranceschi/rinha-de-backend-2024-q1).
-Fiz meu projeto com a linguagem que tenho mais conhecimento: .net 8. A [imagem](https://hub.docker.com/r/felipebossolani/rinha-de-backend-2024-q01-dotnet) está com 49.25Mb. 
+Meu segundo repositório na rinha. O primeiro foi feito em .net 8.0 e pode ser encontrado [aqui](https://github.com/felipebossolani/rinha-de-backend-2024-q01-dotnet). Esse código replica bem o primeiro porém aplicando a versão preview 1 do .net 9.0 e tentando colocar algumas melhorias e vermos como fica. O desafio é [rinha de backend 2ª edição - 2024/Q1](https://github.com/zanfranceschi/rinha-de-backend-2024-q1).
+Imagem da versão da api em .net 9.0 pode ser encontrada [aqui](https://hub.docker.com/r/felipebossolani/rinha-de-backend-2024-q01-dotnet9-preview) está com 49.25Mb. 
 
 ## Stack
 
-- .net 8.0
+- .net 9.0 preview 1
 - nginx
 - postgres
 
@@ -19,4 +19,3 @@ docker-compose up -d
 ## Resultados
 
 ![Resultados do gatling](docs/gatling-20240217.png)
-
