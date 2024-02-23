@@ -18,4 +18,8 @@ docker-compose up -d
 
 ## Resultados
 
-![Resultados do gatling](docs/gatling-20240217.png)
+### Resultados do gatling referente a primeira execução com imagem local
+![Resultados do gatling referente a primeira execução com imagem local](docs/gatling-20240223-local.png)
+
+### Resultados do gatling referente a primeira execução com imagem no docker hub
+![Resultados do gatling referente a primeira execução com imagem no docker hub](docs/gatling-20240223-dockerhub.png)

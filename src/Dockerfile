@@ -22,4 +22,5 @@ ENTRYPOINT ["dotnet", "rinha-dotnet-9.dll"]
 
 
 #docker build -t rinha-de-backend-2024-q01-dotnet9 .
+
 #docker run -e "ConnectionStrings__rinha=Host=localhost;Database=rinha;Username=user;Password=password;Pooling=true;Minimum Pool Size=0;Maximum Pool Size=100;" -d -p 9999:9999 rinha-de-backend-2024-q01-dotnet9
